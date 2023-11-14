@@ -13,6 +13,7 @@ import Library from "./components/Library";
 import Featured from "./components/Featured";
 import NewArrivals from "./components/New Arrivals";
 import Header from "./components/Header";
+import BookDetails from "./components/BookDetails";
 
 function App() {
   const webTitle = "Bookstagram";
@@ -28,7 +29,7 @@ function App() {
         <Route path="/BooksFeed" element={<BookFeed />} />
         <Route path="/BooksCollection/*" element={<BookCollection />} />
         <Route path="/BookReview" element={<BookReview />} />
-        <Route path="/BookDetails/:bookId" element={<BookDetail />} />
+        <Route path="/BookDetails/:bookId" element={<BookDetails />} />
         <Route path="/BookHub" element={<BookHub />} />
         <Route path="/Library/*" element={<Library />} />
         <Route path="/NewArrivals/*" element={<NewArrivals />} />

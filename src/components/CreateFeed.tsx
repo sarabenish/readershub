@@ -3,12 +3,13 @@ import BooksFeed from "./BooksFeed";
 import { useDispatch, useSelector } from "react-redux";
 import { addFeed } from "../store/feed/feeds";
 import image1 from "../assets/userpic.png";
+import { RootState } from "./Reducer";
 
 function CreateFeed() {
   const [userName, setName] = useState("");
   const [feedPost, setPost] = useState("");
   const [postTime, setTime] = useState();
-  const feeds = useSelector((state) => state.feed);
+  const feeds = useSelector((state: RootState) => state.feed);
   const dispatch = useDispatch();
 
   const feedList = {

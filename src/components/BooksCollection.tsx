@@ -1,12 +1,12 @@
 import Box from "@mui/material/Box";
-import { ImageList, ImageListItem } from "@mui/material";
+import { RootState } from "./Reducer";
 import "../App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import BookDetails from "./BookDetails";
 import { useSelector } from "react-redux";
 
 function BooksCollection() {
-  const books = useSelector((state) => state.book);
+  const books = useSelector((state: RootState) => state.book);
 
   const setEffect = () => {};
 

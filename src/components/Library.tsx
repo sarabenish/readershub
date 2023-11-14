@@ -4,9 +4,10 @@ import "../App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import BookDetails from "./BookDetails";
 import { useSelector } from "react-redux";
+import { RootState } from "./Reducer";
 
 function Library() {
-  const librarybooks = useSelector((state) => state.librarybook);
+  const librarybooks = useSelector((state: RootState) => state.librarybook);
 
   const setEffect = () => {};
 

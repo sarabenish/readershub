@@ -3,11 +3,12 @@ import { ImageList, ImageListItem } from "@mui/material";
 import "../App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import BookDetails from "./BookDetails";
+import { RootState } from "./Reducer";
 import { useSelector } from "react-redux";
 import React from "react";
 
 function Featured() {
-  const books = useSelector((state) => state.book);
+  const books = useSelector((state: RootState) => state.book);
 
   const setEffect = () => {};
 

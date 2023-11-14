@@ -8,5 +8,6 @@ const rootReducer = combineReducers({
   book: books,
   librarybook: librarybooks,
 });
+export type RootState = ReturnType<typeof rootReducer>;
 
 export default rootReducer;

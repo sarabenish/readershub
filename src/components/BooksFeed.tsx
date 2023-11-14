@@ -4,10 +4,11 @@ import CreateFeed from "./CreateFeed";
 import { Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "./Reducer";
 import { addFeed } from "../store/feed/feeds";
 
 function BooksFeed() {
-  const feeds = useSelector((state) => state.feed);
+  const feeds = useSelector((state: RootState) => state.feed);
   const dispatch = useDispatch();
 
   return (

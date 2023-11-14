@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Route, Routes } from "react-router-dom";
+import { RootState } from "./Reducer";
 import BookDetails from "./BookDetails";
 import "../App.css";
 
 function BookHub() {
-  const books = useSelector((state) => state.book);
-  const librarybooks = useSelector((state) => state.librarybook);
+  const books = useSelector((state: any) => state.book);
+  const librarybooks = useSelector((state: any) => state.librarybook);
 
   const booksN = books.filter((book) => book.collectionN == true);
   const booksF = books.filter((book) => book.collectionF == true);
