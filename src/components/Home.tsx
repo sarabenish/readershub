@@ -15,10 +15,12 @@ import BooksFeed from "./BooksFeed";
 function Home() {
   const webTitle = "Bookstagram";
   const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <div>
       <Header title="Bookstagram"></Header>
+
       {location.pathname === "/readershub/" && (
         <div className="d-flex align-items-center justify-content-center vh-100">
           <div className="row">
