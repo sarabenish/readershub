@@ -19,7 +19,7 @@ function Home() {
   return (
     <div>
       <Header title="Bookstagram"></Header>
-      {location.pathname === "/" && (
+      {location.pathname === "https://sarabenish.github.io/readershub/" && (
         <div className="d-flex align-items-center justify-content-center vh-100">
           <div className="row">
             <h1>Welcome to Bookstagram</h1>
