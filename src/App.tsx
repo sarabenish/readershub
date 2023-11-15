@@ -34,6 +34,7 @@ function App() {
         <Route path="/Library/*" element={<Library />} />
         <Route path="/NewArrivals/*" element={<NewArrivals />} />
         <Route path="/Featured/*" element={<Featured />} />
+        <Route path="/Home" element={<Home />}></Route>
       </Routes>
     </div>
   );
