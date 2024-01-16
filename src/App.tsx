@@ -25,16 +25,7 @@ function App() {
       style={{ backgroundColor: "#fff8f2", minHeight: "730px" }}
     >
       <Home></Home>
-      {location.pathname === "/" && (
-        <div className="d-flex align-items-center justify-content-center vh-100">
-          <div className="row">
-            <h1>Welcome to Bookstagram</h1>
-          </div>
-          <Link className="btn btn-dark " to="/BookHub">
-            Explore Now!
-          </Link>
-        </div>
-      )}
+
       <Routes>
         <Route path="/BooksFeed" element={<BookFeed />} />
         <Route path="/BooksCollection/*" element={<BookCollection />} />
